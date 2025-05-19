@@ -15,23 +15,27 @@
       display: grid;
       place-items: center;
       height: 100vh;
+      margin: 0;
       font-family: 'Figtree', sans-serif;
     }
     .card{
       background: white;
       display: flex;
       flex-direction: column;
-      width: 384px;
-      height: 522px;
+      width: 90%;
+      max-width: 384px;
+      height: auto;
       border-radius: 5%;
       border: 1px solid black;
       box-shadow: 7px 7px ;
-
+      box-sizing: border-box;
     }
     .card img{
+      width: 87.5%;
+      max-width: 87.5%;
+      height: auto;
       border-radius: 5%;
       margin: 24px;
-      width: fit-content;
     }
     .status{
       background: hsl(47, 88%, 63%);
@@ -55,15 +59,21 @@
     .title{
       font-weight:800;
       font-size: 20px;
-      margin: 5% 24px;
-      width: 80%;
+      margin: 5px 24px 20px 24px;
+      width: 90%;
+    }
+    .title:hover{
+      color: hsl(47, 88%, 63%);
+      cursor: pointer;
     }
     .description{
       font-weight: 500;
-      font-size: 16px;
+      font-size: 14px;
       color: hsl(0, 0%, 42%);
       margin: 0 24px;
-      width: 90%;
+      width: 85%;
+      line-height: 25px;
+      word-spacing: 2px;
     }
     .author{
       display: flex;
@@ -71,7 +81,7 @@
       align-items: center;
       justify-content: left;
       font-size: 12px;
-      font-weight: 500;
+      font-weight: 800;
     }
     .author img{
       width: 32px;
