@@ -15,7 +15,7 @@
       display: grid;
       place-items: center;
       height: 100vh;
-
+      font-family: 'Figtree', sans-serif;
     }
     .card{
       background: white;
@@ -26,15 +26,57 @@
       border-radius: 5%;
       border: 1px solid black;
       box-shadow: 7px 7px ;
-      padding: 24px;
 
     }
     .card img{
       border-radius: 5%;
+      margin: 24px;
+      width: fit-content;
+    }
+    .status{
+      background: hsl(47, 88%, 63%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5%;
+      margin: 0 24px 5% 24px;
+      width: 82px;
+      height: 29px; 
+      font-weight: 800;
+      font-size: 12px;
+    }
+    .p_date{
+      margin: 0 24px;
+      width: 80%;
+      height: 21px;
+      font-weight: 500;
+      font-size: 12px;
     }
     .title{
-      font-family: 'Figtree', sans-serif;
       font-weight:800;
+      font-size: 20px;
+      margin: 5% 24px;
+      width: 80%;
+    }
+    .description{
+      font-weight: 500;
+      font-size: 16px;
+      color: hsl(0, 0%, 42%);
+      margin: 0 24px;
+      width: 90%;
+    }
+    .author{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: left;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .author img{
+      width: 32px;
+      height: 32px;
+      margin: 24px 10px 24px 24px;
     }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -43,11 +85,15 @@
 <body>
   <div class = "card">
     <img src="./assets/images/illustration-article.svg" alt="blog post">
-    <div class="status"></div>
-    <div class = "p_date"></div>
+    <div class="status">Learning</div>
+    <div class = "p_date">Published 21 Dec 2023</div>
     
-    <div class="title">HTML and CSS foundations</div>
+    <div class="title">HTML & CSS foundations</div>
     <div class="description">These languages are the backbone of every website, defining structure, content, and presentation.</div>
+    <div class = "author">
+      <img src="./assets/images/image-avatar.webp" alt="author pic">
+      <div class="author">Greg Hooper</div>
+    </div>
   </div>  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
